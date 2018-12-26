@@ -1,0 +1,18 @@
+{
+    "name": "Monzo Bank Current Account",
+    "balance": 12.56,
+    "account_logo": "testing",
+    "last_updated": "2018-09-22T12:42:31Z",
+    "transactions": [
+        {
+            "name": "Deliveroo",
+            "date": "2018-09-22T12:42:31Z",
+            "merchant_name": "Deliveroo",
+            "merchant_logo": "testing",
+            "amount": 75.5,
+            "categories": [
+                4
+            ]
+        }
+    ]
+}

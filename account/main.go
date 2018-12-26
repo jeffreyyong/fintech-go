@@ -33,19 +33,21 @@ func main() {
 
 	// create event emitter
 	var eventEmitter msgqueue.EventEmitter
-	conf := sarama.NewConfig()
-	conf.Producer.Return.Successes = true
-	conn, err := sarama.NewClient(config.KafkaMessageBrokers, conf)
-	if err != nil {
-		panic(err)
-	}
+	// conf := sarama.NewConfig()
+	// conf.Producer.Return.Successes = true
+	// conn, err := sarama.NewClient(config.KafkaMessageBrokers, conf)
+	// if err != nil {
+	// 	panic(err)
+	// }
 
-	eventEmitter, err = kafka.NewKafkaEventEmitter(conn)
-	if err != nil {
-		panic(err)
-	}
+	// eventEmitter, err = kafka.NewKafkaEventEmitter(conn)
+	// if err != nil {
+	// 	panic(err)
+	// }
 
-	create dbHandler
+	// create dbHandler
+	fmt.Println("Jeffrey")
+	fmt.Println(config.DBConnection)
 	dbHandler, err := dblayer.NewPersistenceLayer(config.DBType, config.DBConnection)
 	if err != nil {
 		logger.Log("Error", "Fail to initialise a dbhandler")

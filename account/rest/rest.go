@@ -27,6 +27,7 @@ func New(dbHandler persistence.DatabaseHandler, eventEmitter msgqueue.EventEmitt
 	r.Use(accessControl)
 
 	r.Get("/accounts", handler.allAccountHandler)
+	r.Post("/accounts", handler.newAccountHandler)
 
 	s.router = r
 	return s
