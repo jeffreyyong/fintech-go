@@ -1,5 +1,5 @@
 ---
 
-database_type: mongodb
-db_connection: mongodb:127.0.0.1
-rest_ednopint: localhost:8181
+db_type: mongodb
+db_connection: localhost
+rest_endtpoint: localhost:8181

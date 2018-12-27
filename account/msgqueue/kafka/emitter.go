@@ -3,7 +3,7 @@ package kafka
 import (
 	"encoding/json"
 
-	"github.com/fintech-asean/fintech-go/account/msgqueue"
+	"bitbucket.org/fintechasean/fintech-go/account/msgqueue"
 	sarama "gopkg.in/Shopify/sarama.v1"
 )
 

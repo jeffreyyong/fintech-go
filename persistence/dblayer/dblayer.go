@@ -1,8 +1,8 @@
 package dblayer
 
 import (
-	"github.com/fintech-asean/fintech-go/persistence"
-	"github.com/fintech-asean/fintech-go/persistence/mongo"
+	"bitbucket.org/fintechasean/fintech-go/persistence"
+	"bitbucket.org/fintechasean/fintech-go/persistence/mongo"
 )
 
 // DbType is database type

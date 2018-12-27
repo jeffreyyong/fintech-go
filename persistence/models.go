@@ -1,30 +1,28 @@
 package persistence
 
 import (
-	"time"
-
 	"github.com/globalsign/mgo/bson"
 )
 
 // Account is the bank account that the user has
 type Account struct {
 	ID           bson.ObjectId `bson:"_id"`
-	Name         string
-	Balance      float64
-	AccountLogo  string
-	LastUpdated  time.Duration
-	Transactions []Transaction
+	Name         string        `json:"name"`
+	Balance      float64       `json:"balance"`
+	AccountLogo  string        `json:"account_logo"`
+	LastUpdated  string        `json:"last_updated"`
+	Transactions []Transaction `json:"transactions"`
 }
 
 // Transaction holds the transaction details
 type Transaction struct {
 	ID           bson.ObjectId `bson:"_id"`
-	Name         string
-	Date         time.Duration
-	MerchantName string
-	MerchantLogo string
-	Amount       float64
-	Categories   []Category
+	Name         string        `json:"name"`
+	Date         string        `json:"date"`
+	MerchantName string        `json:"merchant_name"`
+	MerchantLogo string        `json:"merchant_logo"`
+	Amount       float64       `json:"amount"`
+	Categories   []Category    `json:"categories"`
 }
 
 // Category is the type for category

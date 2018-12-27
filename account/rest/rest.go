@@ -6,8 +6,8 @@ import (
 	"github.com/go-chi/chi"
 	kitlog "github.com/go-kit/kit/log"
 
-	"github.com/fintech-asean/fintech-go/account/msgqueue"
-	"github.com/fintech-asean/fintech-go/persistence"
+	"bitbucket.org/fintechasean/fintech-go/account/msgqueue"
+	"bitbucket.org/fintechasean/fintech-go/persistence"
 )
 
 // Server holds the dependencies for a HTTP server.
@@ -27,7 +27,8 @@ func New(dbHandler persistence.DatabaseHandler, eventEmitter msgqueue.EventEmitt
 	r.Use(accessControl)
 
 	r.Get("/accounts", handler.allAccountHandler)
-	r.Post("/accounts", handler.newAccountHandler)
+	r.Post("/account", handler.newAccountHandler)
+	r.Get("/account/{accountID}", handler.oneAccountHandler)
 
 	s.router = r
 	return s

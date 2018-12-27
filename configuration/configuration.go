@@ -5,14 +5,14 @@ import (
 	"io/ioutil"
 	"reflect"
 
-	"github.com/fintech-asean/fintech-go/persistence/dblayer"
+	"bitbucket.org/fintechasean/fintech-go/persistence/dblayer"
 	yaml "gopkg.in/yaml.v2"
 )
 
 var (
 	// DBTypeDefault is the default dblayer type
 	DBTypeDefault             = dblayer.DbType("mongodb")
-	DBConnectionDefault       = "mongodb://127.0.0.1"
+	DBConnectionDefault       = "localhost"
 	RestEndpointDefault       = "localhost:8181"
 	MessageBrokerTypeDefault  = "kafka"
 	KafkaMessageBrokerDefault = []string{"localhost:9092"}

@@ -8,10 +8,10 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/fintech-asean/fintech-go/account/msgqueue"
-	"github.com/fintech-asean/fintech-go/account/rest"
-	"github.com/fintech-asean/fintech-go/configuration"
-	"github.com/fintech-asean/fintech-go/persistence/dblayer"
+	"bitbucket.org/fintechasean/fintech-go/account/msgqueue"
+	"bitbucket.org/fintechasean/fintech-go/account/rest"
+	"bitbucket.org/fintechasean/fintech-go/configuration"
+	"bitbucket.org/fintechasean/fintech-go/persistence/dblayer"
 	"github.com/go-kit/kit/log"
 )
 
@@ -46,8 +46,6 @@ func main() {
 	// }
 
 	// create dbHandler
-	fmt.Println("Jeffrey")
-	fmt.Println(config.DBConnection)
 	dbHandler, err := dblayer.NewPersistenceLayer(config.DBType, config.DBConnection)
 	if err != nil {
 		logger.Log("Error", "Fail to initialise a dbhandler")
