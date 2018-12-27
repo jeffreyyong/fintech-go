@@ -8,10 +8,10 @@ import (
 	"os/signal"
 	"syscall"
 
-	"bitbucket.org/fintechasean/fintech-go/account/msgqueue"
 	"bitbucket.org/fintechasean/fintech-go/account/rest"
 	"bitbucket.org/fintechasean/fintech-go/configuration"
-	"bitbucket.org/fintechasean/fintech-go/persistence/dblayer"
+	"bitbucket.org/fintechasean/fintech-go/lib/msgqueue"
+	"bitbucket.org/fintechasean/fintech-go/lib/persistence/dblayer"
 	"github.com/go-kit/kit/log"
 )
 

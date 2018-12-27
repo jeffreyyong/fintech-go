@@ -6,8 +6,8 @@ import (
 	"github.com/go-chi/chi"
 	kitlog "github.com/go-kit/kit/log"
 
-	"bitbucket.org/fintechasean/fintech-go/account/msgqueue"
-	"bitbucket.org/fintechasean/fintech-go/persistence"
+	"bitbucket.org/fintechasean/fintech-go/lib/msgqueue"
+	"bitbucket.org/fintechasean/fintech-go/lib/persistence"
 )
 
 // Server holds the dependencies for a HTTP server.

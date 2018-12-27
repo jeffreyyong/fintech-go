@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"bitbucket.org/fintechasean/fintech-go/account/msgqueue"
-	"bitbucket.org/fintechasean/fintech-go/persistence"
+	"bitbucket.org/fintechasean/fintech-go/lib/msgqueue"
+	"bitbucket.org/fintechasean/fintech-go/lib/persistence"
 	"github.com/go-chi/chi"
 )
 
