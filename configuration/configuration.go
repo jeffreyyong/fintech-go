@@ -5,7 +5,7 @@ import (
 	"io/ioutil"
 	"reflect"
 
-	"bitbucket.org/fintechasean/fintech-go/persistence/dblayer"
+	"bitbucket.org/fintechasean/fintech-go/lib/persistence/dblayer"
 	yaml "gopkg.in/yaml.v2"
 )
 
