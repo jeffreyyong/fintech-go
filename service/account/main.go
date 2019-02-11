@@ -8,11 +8,12 @@ import (
 	"os/signal"
 	"syscall"
 
-	"bitbucket.org/fintechasean/fintech-go/account/rest"
 	"bitbucket.org/fintechasean/fintech-go/configuration"
 	"bitbucket.org/fintechasean/fintech-go/lib/msgqueue"
 	"bitbucket.org/fintechasean/fintech-go/lib/persistence/dblayer"
+	"bitbucket.org/fintechasean/fintech-go/service/account/rest"
 	"github.com/go-kit/kit/log"
+	// "github.com/go-kit/kit/log"
 )
 
 func main() {
@@ -22,7 +23,7 @@ func main() {
 	logger = log.With(logger, "ts", log.DefaultTimestampUTC)
 
 	// load configuration
-	confPath := flag.String("conf", "../configuration/config.yaml", "flag to set the path to the configuration JSON file")
+	confPath := flag.String("conf", "../../configuration/config.yaml", "flag to set the path to the configuration JSON file")
 	flag.Parse()
 	// extract configuration
 	config, err := configuration.ExtractConfiguration(*confPath)

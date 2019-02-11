@@ -21,6 +21,7 @@ func New(dbHandler persistence.DatabaseHandler, eventEmitter msgqueue.EventEmitt
 	s := &Server{
 		Logger: logger,
 	}
+
 	handler := newAccountHandler(dbHandler, eventEmitter)
 
 	r := chi.NewRouter()

@@ -22,7 +22,7 @@ type Transaction struct {
 	MerchantName string        `json:"merchant_name"`
 	MerchantLogo string        `json:"merchant_logo"`
 	Amount       float64       `json:"amount"`
-	Categories   []Category    `json:"categories"`
+	Category     Category      `json:"category"`
 }
 
 // Category is the type for category
