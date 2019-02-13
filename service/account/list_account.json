@@ -1,0 +1,38 @@
+[
+    {
+        "ID": "5c22d397f45afef494bf05a2",
+        "name": "Monzo Bank Current Account",
+        "balance": 12.56,
+        "account_logo": "",
+        "last_updated": "",
+        "transactions": [
+            {
+                "ID": "5c22d397f45afef494bf05a3",
+                "name": "Deliveroo",
+                "date": "2018-09-22T12:42:31Z",
+                "merchant_name": "",
+                "merchant_logo": "",
+                "amount": 75.5,
+                "categories": []
+            }
+        ]
+    },
+    {
+        "ID": "5c22d587f45afef802a8205c",
+        "name": "Monzo Bank Current Account",
+        "balance": 12.56,
+        "account_logo": "testing",
+        "last_updated": "2018-09-22T12:42:31Z",
+        "transactions": [
+            {
+                "ID": "5c22d587f45afef802a8205d",
+                "name": "Deliveroo",
+                "date": "2018-09-22T12:42:31Z",
+                "merchant_name": "Deliveroo",
+                "merchant_logo": "testing",
+                "amount": 75.5,
+                "categories": []
+            }
+        ]
+    }
+]
