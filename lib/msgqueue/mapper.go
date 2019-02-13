@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"bitbucket.org/fintechasean/fintech-go/contracts"
+	"github.com/jeffreyyong/fintech-go/contracts"
 	"github.com/mitchellh/mapstructure"
 )
 

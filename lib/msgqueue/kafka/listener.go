@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	"bitbucket.org/fintechasean/fintech-go/lib/msgqueue"
+	"github.com/jeffreyyong/fintech-go/lib/msgqueue"
 	log "github.com/sirupsen/logrus"
 	"gopkg.in/Shopify/sarama.v1"
 )

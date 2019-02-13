@@ -1,4 +1,4 @@
-module bitbucket.org/fintechasean/fintech-go
+module github.com/jeffreyyong/fintech-go
 
 require (
 	github.com/DataDog/zstd v1.3.4 // indirect

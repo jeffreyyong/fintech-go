@@ -1,7 +1,7 @@
 package mongo
 
 import (
-	"bitbucket.org/fintechasean/fintech-go/lib/persistence"
+	"github.com/jeffreyyong/fintech-go/lib/persistence"
 	"github.com/globalsign/mgo"
 	"github.com/globalsign/mgo/bson"
 )
