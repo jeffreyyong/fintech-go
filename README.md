@@ -1,4 +1,4 @@
 
 # fintech-go
 
-Backend for the PerFi app written in Go.
+Backend for the fintracker app written in Go.
